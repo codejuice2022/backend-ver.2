@@ -12,11 +12,6 @@ export class UserController {
     return this.userService.create(createUserDto);
   }
 
-  @Get('aaa')
-  find(): string {
-    return 'this.userService.findAll();';
-  }
-
   @Get()
   findAll(): Promise<UserEntity[]> {
     return this.userService.findAll();
